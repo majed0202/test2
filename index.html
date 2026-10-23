@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حجز موعد - د. محمد زهران</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1 id="hDoc"></h1>
+    <p id="hSpec"></p>
+    <p id="hInfo" class="muted" style="color:#fff;opacity:.9"></p>
+  </div>
+  <div id="app"></div>
+</div>
+
+<div id="login" class="overlay" hidden>
+  <div class="modal">
+    <h2 style="margin:0 0 6px;font-weight:800">لوحة التحكم</h2>
+    <p class="muted">أدخل كلمة المرور للمتابعة</p>
+    <input id="lpw" type="password" placeholder="كلمة المرور" autocomplete="off">
+    <div id="lerr" class="msg err" hidden>كلمة المرور غير صحيحة</div>
+    <div class="acts" style="margin-top:14px">
+      <button class="btn full" id="lgo">دخول</button>
+      <button class="btn g full" id="lcx">إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<div id="adm" class="admtop" hidden>
+  <div class="admhead"><b>لوحة تحكم الحجوزات</b><button class="btn s d" data-a="close">إغلاق</button></div>
+  <div class="wrap" id="admBody"></div>
+</div>
+
+<script src="js/admin.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
